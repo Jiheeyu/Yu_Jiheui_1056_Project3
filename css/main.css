@@ -3,6 +3,7 @@
 
 
 #siteContainer {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,9 +17,13 @@ p {
   text-align: center;
 }
 
+.hidden {
+  display: none;
+}
+
 #promo p, #promoTwo p, #promoText p,
 #footerNav p, #snsIcons p, #footerLogo p {
-  color: #333;
+  color: #000;
 }
 
 #mainHeader {
@@ -32,6 +37,10 @@ p {
 
 #logo, #mainNav {
   align-self: center;
+}
+
+#logo p {
+  margin-right: 50px;
 }
 
 #promo {
@@ -54,7 +63,7 @@ p {
 
 #mainFooter {
   width:100%;
-  height: 570px;
+  height:500px;
   background-color: #333;
   display: flex;
   flex-direction: row;
@@ -64,7 +73,7 @@ p {
 }
 
 #footerNav {
-  margin-top: 105px;
+  margin-top: 80px;
   width: 660px;
   height: 350px;
   background-color: #e9e9e9;
@@ -74,7 +83,7 @@ p {
 }
 
 .rightBox {
-  margin-top: 105px;
+  margin-top: 80px;
   width: 660px;
   height: 350px;
   display: flex;
@@ -101,7 +110,7 @@ p {
   justify-content: center;
 }
 
-/* Open index page */
+/* -------------------------- Open index page */
 
 #promoTwo {
   width: 100%;
@@ -130,8 +139,7 @@ p {
   justify-content: center;
 }
 
-#productImageBox {
-  margin-left:10px;
+.productImageBox {
   align-self: center;
   display: flex;
   flex-wrap: wrap;
@@ -139,6 +147,7 @@ p {
 }
 
 .productBox {
+  margin:5px;
   width: 340px;
   height: 500px;
   background-color: #333;
@@ -157,7 +166,7 @@ p {
 
 }
 
-#EventImage {
+.eventImage {
   width: 100%;
   height: 605px;
   background-color: #333;
@@ -174,3 +183,56 @@ p {
   flex-direction: column;
   justify-content: center;
 }
+
+/* -------------------------- Close index page */
+
+/* -------------------------- Open product page */
+
+#productNav {
+  width: 100%;
+  height: 200px;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+#mainProducts {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.mainProImg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mainProBox {
+  margin:100px 5px 30px 5px;
+  width: 690px;
+  height: 500px;
+  background-color: #333;
+}
+
+.productImageBox {
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.productBox {
+  margin:0 5px 100px 5px;
+  width: 340px;
+  height: 500px;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* -------------------------- close product page */
